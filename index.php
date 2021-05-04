@@ -44,6 +44,57 @@
             }
             ?>
     </div>
+
+
+    <div class="row">
+            <!-- ESERCIZIO 3
+            // Utilizzare questo array: https://pastebin.com/CkX3680A. 
+        // Stampiamo il nostro array mettendo gli insegnanti in un 
+        // rettangolo grigio e i PM in un rettangolo verde. -->
+        <?php
+
+                $db = [
+                    'teachers' => [
+                        [
+                            'name' => 'Michele',
+                            'lastname' => 'Papagni'
+                        ],
+                        [
+                            'name' => 'Fabio',
+                            'lastname' => 'Forghieri'
+                        ]
+                    ],
+                    'pm' => [
+                        [
+                            'name' => 'Roberto',
+                            'lastname' => 'Marazzini'
+                        ],
+                        [
+                            'name' => 'Federico',
+                            'lastname' => 'Pellegrini'
+                        ]
+                    ]
+                ];
+                $teachers = $db['teachers'];
+                $pms = $db['pm'];
+                var_dump(array_keys($db)); die();
+                // var_dump($teachers);
+                // echo '<br>';
+                // var_dump($pms);
+                for ($i=0;$i<count($teachers);$i++) {
+                    $teacher = $teachers[$i];
+                    echo '<div class="box teachers">' 
+                        . $teacher['name'] . ' ' . $teacher['lastname']
+                        . '</div>';
+                }
+                for ($i=0;$i<count($pms);$i++) {
+                    $pm = $pms[$i];
+                    echo '<div class="box pm">' 
+                        . $pm['name'] . ' ' . $pm['lastname']
+                        . '</div>';
+                }
+        ?>
+    </div>
 </body>
 
 </html>
