@@ -1,0 +1,9 @@
+body {
+    background-color: chocolate;
+}
+
+div.row {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
