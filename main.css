@@ -1,9 +1,10 @@
 body {
-    background-color: chocolate;
+    background-color: white;
 }
 
 div.row {
     text-align: center;
-    font-size: 35px;
     font-weight: bold;
+    width: 80vw;
+    margin: auto;
 }
